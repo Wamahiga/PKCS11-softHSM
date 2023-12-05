@@ -19,7 +19,7 @@ function initializeModule() {
 
 function fetchTerminalSerialNumber() {
       // For now, returning a hardcoded value
-  return "87656789";
+  return "953445644906";
 }
 
 module.exports = {

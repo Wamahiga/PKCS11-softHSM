@@ -31,8 +31,7 @@ async function performOperations() {
       const mechanism = { name: "RSA_PKCS" };
 
       const encryptedData = encryptData(session, mechanism, publicKey, Buffer.from(MESSAGE, "utf8"));
-      console.log("Encrypted:", encryptedData);
-
+      console.log("Encrypted:", encryptedData.toString('hex'));
       const decryptedMessage = decryptData(session, mechanism, privateKey, encryptedData);
       console.log("\nDecrypted:", decryptedMessage);
     } catch (error) {
